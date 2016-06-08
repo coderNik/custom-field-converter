@@ -250,6 +250,7 @@
 			// recursive function
 			$next = array_shift($hierarchy);
 			$row .= $next['name'];
+			$this->data = array();
 			if (!empty($hierarchy)) {
 				// there are still sub fields
 				$count = intval(get_post_meta($post_id, $row, true));
